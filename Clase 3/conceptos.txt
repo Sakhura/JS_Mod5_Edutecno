@@ -1,0 +1,31 @@
+¿Qué son los parámetros?
+
+función = receta
+parámetros = ingredientes
+
+function receta(ingrediente){
+    return ingrediente + " es un ingrediente de la receta";
+}
+
+parámetros por defecto
+
+function tallarines( salsa = "sin salsa"){
+    return "Tallarines " + salsa;
+}
+
+function tallarines(...numerosIngredientes ){
+    return numerosIngredientes.reduce((total, num)=> total + num, 0);
+    
+}
+
+// ejemplo de ejercicio
+
+funcion
+ocultar elementos
+arreglos de los ingredientes
+agregar o quitar ingredientes
+actualizar lo que se muestra
+calcular el precio por extras
+mostrar el o los ingredientes extras
+manejar el btn 
+promesa de compra
