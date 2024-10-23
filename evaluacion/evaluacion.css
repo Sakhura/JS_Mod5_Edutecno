@@ -1,0 +1,12 @@
+input{
+    border-color: transparent;
+  }
+  
+  input:focus {
+    outline: none !important;
+  }
+  
+  .tareas{
+    width: 28em;
+  }
+  
