@@ -1,0 +1,4 @@
+Destructuring = extraer valores de arreglos o propiedades de objetos y 
+asignarlos a variables de una manera mas legible y concisa.
+
+Spread: expandir
