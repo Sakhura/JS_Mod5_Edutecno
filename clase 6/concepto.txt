@@ -1,0 +1,43 @@
+****Sintaxis****
+
+***Callbacks: no se puede abusar ya que codigo se vuelve ilegible (tallarines)
+
+    function  fetchData(callback){
+        // Simulación de una llamada a una API
+        setTimeout(() => {
+            callback("datos obtenidos");
+        }, 1000);
+    }
+fetchData  (data => {
+    console.log(data); //"datos obtenidos" 1 seg
+});
+   
+**   promesa (exitoso / fallido)
+
+   function fetchData(){
+    return new Promise((resolve, reject) => {
+        // Simulación de una llamada a una API
+        setTimeout(() => {
+            resolve("datos obtenidos");
+            }, 1000);
+    });
+   }
+
+fetchData().then(data => {
+    console.log(data);  // "datos obtenidos" 1 seg
+    }).catch(error => {
+        console.error(error);
+});
+
+**   async/await ( es pero no es, permite escribir codigo asincronico que parece sincronico)
+
+async function getData(){
+    try{
+        const data = await fetchData();
+        console.log(data);  // "datos obtenidos" 1 seg
+        }catch(error){
+
+        }
+    }
+
+getData();
